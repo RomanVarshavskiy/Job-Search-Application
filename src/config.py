@@ -2,6 +2,7 @@ from configparser import ConfigParser
 
 
 def config(filename: str = 'database.ini', section: str = 'postgresql') -> dict[str, str]:
+    """Читает конфигурационный файл и возвращает параметры подключения к базе данных."""
     # create a parser
     parser = ConfigParser()
     # read config file
